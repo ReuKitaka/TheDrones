@@ -13,7 +13,7 @@ import javax.ws.rs.core.Application;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "the title",
+                title = "The Drone",
                 version = "0.0",
                 description = "My API",
                 license = @License(name = "Apache 2.0", url = "http://www.apache.org/licenses/LICENSE-2.0"),
