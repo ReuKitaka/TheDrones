@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 public enum Model {
-    Lightweight, Middleweight, Cruiserweight, Heavyweight;
+    LIGHTWEIGHT,MIDDLEWEIGHT,CRUISERWEIGHT,HEAVYWEIGHT;
     private static final List<Model> VALUES =
             List.of(values());
     private static final int SIZE = VALUES.size();
