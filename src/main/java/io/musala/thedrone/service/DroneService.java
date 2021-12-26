@@ -8,7 +8,7 @@ import java.util.List;
 public interface DroneService {
     Drone registerDrone(Drone drone);
 
-    void loadDroneMedication(Long droneId, List<Medication> medications) throws Exception;
+    void loadDroneMedication(Long droneId, List<Medication> medications) ;
 
     List<Medication> getDroneMedications(Long droneId);
 

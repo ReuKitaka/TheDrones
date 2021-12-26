@@ -24,7 +24,7 @@ public class DroneServiceImpl implements DroneService {
     }
 
     @Override
-    public void loadDroneMedication(Long droneId, List<Medication> medications) throws Exception {
+    public void loadDroneMedication(Long droneId, List<Medication> medications) {
         var optionalDrone = repository.findById(droneId);
         optionalDrone.ifPresentOrElse(drone -> {
                     if (drone.getBatteryCapacity() >= BATTERY_MIN_LEVEL && State.IDLE.equals(drone.getState())) {
