@@ -45,7 +45,7 @@ public class DroneServiceImplTest {
     @InSequence(2)
     public void registerDrone() {
         var drone = new Drone();
-        drone.setSerialNumber("D12345");
+        drone.setSerialNumber("DRONETEST1");
         drone.setBatteryCapacity(100.0);
         drone.setModel(Model.randomModel());
         drone.setState(State.IDLE);
