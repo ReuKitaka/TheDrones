@@ -22,6 +22,7 @@ import java.util.List;
 @Path("/drones")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+
 public class Drones {
     @Inject
     private DroneService droneService;
