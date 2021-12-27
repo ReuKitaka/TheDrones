@@ -116,17 +116,23 @@ To get started building this application locally you need to install the followi
          mvn clean compile  wildfly:deploy
  
  - Open browser and access the endpoints of the the drone project via following link (http://127.0.0.1:8080/thedrone/swagger-ui/)
- - **Note:**  If you are running on different port you can change port **8080**.
-              ![](droneimg1.PNG)
-              ![](droneimg2.PNG)
+ - **Note:**  If you are running on different port you can change port **8080** to your specified port.
+ 
+     ![](droneimg1.PNG)
+     
+     ![](droneimg2.PNG)
+     
+ - You can also use other testing tools like Postman,ARC etc.
+ 
+     ![](ARCimge.PNG)
  
  ### Run test
  
  - I have used Arquillian testing framework to write my unit test.
- - Using Arquillian minimizes the burden of managing containers, deployments, framework initializations.
+ - Using Arquillian minimizes the burden of managing containers, deployments and  framework initializations.
  - Before you run test you need to specify the location of your application server in arquillian.xml file.
  - Open the drone project in any Java IDE and search and open arquillian.xml file.
- - Specify the location of your application server under configuration section (*jbossHome*).
+ - Specify the location of your application server(wildfly) under configuration section (*jbossHome*).
   
       ```xml
            <configuration>
