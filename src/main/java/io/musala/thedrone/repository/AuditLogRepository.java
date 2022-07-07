@@ -1,6 +1,6 @@
-package io.musala.thedrone.repository;
+    package io.musala.thedrone.repository;
 
-import io.musala.thedrone.model.AuditLog;
+    import io.musala.thedrone.model.AuditLog;
 
-public interface AuditLogRepository  extends JpaRepository<AuditLog,Long>{
-}
+    public interface AuditLogRepository  extends JpaRepository<AuditLog,Long>{
+    }

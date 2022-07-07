@@ -1,4 +1,4 @@
-package io.musala.thedrone.repository;
+    package io.musala.thedrone.repository;
 
-public interface Repository<T,ID> {
-}
+    public interface Repository<T,ID> {
+    }

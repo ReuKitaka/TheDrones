@@ -1,24 +1,24 @@
-package io.musala.thedrone.service;
+    package io.musala.thedrone.service;
 
-import io.musala.thedrone.model.Drone;
-import io.musala.thedrone.model.Medication;
+    import io.musala.thedrone.model.Drone;
+    import io.musala.thedrone.model.Medication;
 
-import java.util.List;
+    import java.util.List;
 
-public interface DroneService {
-    Drone registerDrone(Drone drone);
+    public interface DroneService {
+        Drone registerDrone(Drone drone);
 
-    void loadDroneMedication(Long droneId, List<Medication> medications) ;
+        void loadDroneMedication(Long droneId, List<Medication> medications) ;
 
-    List<Medication> getDroneMedications(Long droneId);
+        List<Medication> getDroneMedications(Long droneId);
 
-    List<Medication> getDroneMedications(Drone drone);
+        List<Medication> getDroneMedications(Drone drone);
 
-    List<Drone> getAvailableDrones();
+        List<Drone> getAvailableDrones();
 
-    Double getBatteryLevel(Long droneId);
+        Double getBatteryLevel(Long droneId);
 
-    Double getBatteryLevel(Drone drone);
+        Double getBatteryLevel(Drone drone);
 
-    void clearDatabase();
-}
+        void clearDatabase();
+    }
